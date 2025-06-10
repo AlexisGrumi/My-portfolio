@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fira: ['"Fira Code"', 'monospace'],
+      },
+      backgroundImage: {
+        'lines': "url('src/assets/Lines.svg')",
+        'dots': "url('src/assets/Dots.svg')"
+      },
+      colors:{
+        'primary': '#C778DD',
+        'gray': '#ABB2BF',
+        'background': '#282C33',
+      }
+    },
   },
   plugins: [],
 }
