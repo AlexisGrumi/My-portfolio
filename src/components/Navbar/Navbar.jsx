@@ -5,7 +5,7 @@ import ds from '../../assets/icons/Discord.svg'
 
 function Navbar() {
     return (
-        <div className='flex flex-row w-full absolute z-50 text-[0.9vw] h-fit'>
+        <div className='flex flex-row w-full fixed top-0 left-0 z-50 text-[0.9vw] h-fit bg-transparent'>
             <div className='flex flex-col ml-2 items-center gap-y-2'>
                 <div className='border-l-2 h-56 border-[#ABB2BF]' />
                 <div className='flex flex-col gap-y-4 items-center'>
