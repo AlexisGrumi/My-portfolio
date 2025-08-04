@@ -17,12 +17,28 @@ function Contact() {
                 </div>
                 <div className='border p-4 flex flex-col gap-y-4 leading-none justify-between'>
                     <h1 className=''>Message me here</h1>
-                    <span className='flex flex-row gap-x-2 leading-none font-normal'>
-                        <FaLinkedin />  Alexis Grumi
+                    <span
+                        role="link"
+                        tabIndex={0}
+                        onClick={() => window.open("https://www.linkedin.com/in/alexis-grumi/", "_blank")}
+                        onKeyDown={(e) => {
+                            if (e.key === "Enter" || e.key === " ") {
+                                window.open("https://www.linkedin.com/in/alexis-grumi/", "_blank");
+                            }
+                        }}
+                        className="flex flex-row gap-x-2 leading-none font-normal cursor-pointer"
+                    >
+                        <FaLinkedin /> Alexis Grumi
                     </span>
-                    <span className='flex flex-row gap-x-2 leading-none font-light'>
+
+                    <a
+                        href="mailto:al.grumiz@gmail.com"
+                        className="flex flex-row gap-x-2 leading-none font-light cursor-pointer no-underline"
+                    >
                         <GoMail /> al.grumiz@gmail.com
-                    </span>
+                    </a>    
+
+
                 </div>
             </div>
         </div>

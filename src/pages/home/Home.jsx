@@ -11,7 +11,7 @@ import Contact from '../../components/Contact/Contact'
 export default function Home() {
   return (
     <div className='flex flex-col items-center gap-y-20 w-full justify-items-center'>
-      <div id='Hero' className='w-full font-bold text-xl flex flex-row mt-24 justify-between items-center'>
+      <div id='home' className='w-full font-bold text-xl flex flex-row mt-24 justify-between items-center'>
         <div className='mt-16'>
           <h1>
             Hi! I'm Alexis Grumi, a <span className='text-[#C778DD]'>
@@ -23,7 +23,7 @@ export default function Home() {
           <h2 className="font-thin my-6 w-11/12">
             I craft digital experiences where creativity and technology converge.
           </h2>
-          <button className='border-2 border-[#C778DD] px-4 py-2 hover:bg-[rgba(199,120,221,0.2)] transition-colors duration-300 ease-in-out'>Contact me!!</button>
+          <button onClick={() => window.location.href = "mailto:al.grumiz@gmail.com"} className='border-2 border-[#C778DD] px-4 py-2 hover:bg-[rgba(199,120,221,0.2)] transition-colors duration-300 ease-in-out'>Contact me!!</button>
         </div>
         <div className='w-fit bg-lines bg-no-repeat bg-[position:0px_60px] bg-[size:180px_140px] flex flex-col'>
           <img className='max-w-[387px]' src={me} alt="Me" />
@@ -46,8 +46,10 @@ export default function Home() {
           ,,
         </span>
       </div>
+      <section id="projects" className='w-full'>
+        <Projects />  
+      </section>
 
-      <Projects id='Projects' />
 
       <div id='Skills' className="w-full flex flex-col justify-between items-start gap-8">
         <div className='flex flex-row items-center gap-x-4 justify-between w-full'>
@@ -64,7 +66,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='about-me' className='w-full'>
+      <div id='aboutme' className='w-full'>
         <div className='flex flex-row items-center gap-x-4 justify-between w-full'>
           <div className='flex flex-row items-center gap-x-4 w-full'>
             <h1 className='text-3xl'><span className='text-[#C778DD]'>#</span>about-me</h1>
@@ -90,7 +92,7 @@ export default function Home() {
               the best possible experience — for users and development teams alike.
 
             </h1>
-            <button className='border-2 border-[#C778DD] px-4 py-2 hover:bg-[rgba(199,120,221,0.2)] transition-colors duration-300 ease-in-out mt-6 '>Contact me!!</button>
+            <button onClick={() => window.location.href = "mailto:al.grumiz@gmail.com"} className='border-2 border-[#C778DD] px-4 py-2 hover:bg-[rgba(199,120,221,0.2)] transition-colors duration-300 ease-in-out mt-6 '>Contact me!!</button>
           </div>
           <div className=' bg-dots bg-no-repeat bg-[position:0px_60px]'>
             <img className='' src={me2} alt="Me" />
@@ -98,7 +100,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Contact/>
+      <Contact id="contact" />
     </div>
   )
 }

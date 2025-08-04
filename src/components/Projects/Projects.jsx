@@ -51,9 +51,9 @@ function Projects() {
           <h1 className='text-3xl'><span className='text-[#C778DD]'>#</span>projects</h1>
           <div className="w-3/5 border-t border-primary my-4" />
         </div>
-        <div className='w-fit text-nowrap'>
+        {/* <div className='w-fit text-nowrap'>
           ViewAll {"->"}
-        </div>
+        </div> */}
       </div>
 
       <Cards projects={projects} />
