@@ -1,7 +1,6 @@
 import React from 'react'
-import gh from '../../assets/icons/Github.svg'
-import li from '../../assets/icons/LinkedIn.svg'
-import ds from '../../assets/icons/Discord.svg'
+import LogoAGZ from '../../assets/LogoAGZ.png'
+import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Navbar() {
     return (
@@ -9,15 +8,19 @@ function Navbar() {
             <div className='flex flex-col ml-2 items-center gap-y-2'>
                 <div className='border-l-2 h-56 border-[#ABB2BF]' />
                 <div className='flex flex-col gap-y-4 items-center'>
-                    <img src={gh} className='w-[2vw] h-auto hover:cursor-pointer' />
-                    <img src={li} className='w-[2vw] h-auto hover:cursor-pointer' />
-                    <img src={ds} className='w-[2vw] h-auto hover:cursor-pointer' />
+                    <FaGithub className="w-[30px] min-w-[30px] max-w-[30px] h-auto text-current hover:text-white transition-colors duration-300 ease-in-out cursor-pointer" />
+                    <FaLinkedin className="w-[30px] min-w-[30px] max-w-[30px] h-auto text-current hover:text-white transition-colors duration-300 ease-in-out cursor-pointer" />
+                    <FaDiscord className="w-[30px] min-w-[30px] max-w-[30px] h-auto text-current hover:text-white transition-colors duration-300 ease-in-out cursor-pointer" />
+
                 </div>
             </div>
             <nav className='flex flex-row justify-between w-full mx-12 mt-4 h-fit'>
-                <h1 className='font-semibold'>
-                    Alexis
-                </h1>
+                <span className='font-semibold flex flex-row items-center'>
+                    <img src={LogoAGZ} className='max-w-[70px]'/>
+                    <h1>
+                        Alexis
+                    </h1>
+                </span>
                 <ul className='flex flex-row gap-x-8 font-medium h-fit'>
                     <li className='hover:font-bold h-fit hover:cursor-pointer'><span className='text-[#C778DD]'>#</span>home</li>
                     <li className='hover:font-bold h-fit hover:cursor-pointer'><span className='text-[#C778DD]'>#</span>works</li>

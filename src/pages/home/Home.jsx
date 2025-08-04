@@ -4,6 +4,9 @@ import me2 from '../../assets/Person2.png'
 import Projects from '../../components/Projects/Projects'
 import SkillsList from '../../components/Skills/SkillsList'
 import image from '../../assets/LinesDot.svg'
+import { FaLinkedin } from 'react-icons/fa'
+import { GoMail } from 'react-icons/go'
+import Contact from '../../components/Contact/Contact'
 
 export default function Home() {
   return (
@@ -61,7 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='w-full'>
+      <div id='about-me' className='w-full'>
         <div className='flex flex-row items-center gap-x-4 justify-between w-full'>
           <div className='flex flex-row items-center gap-x-4 w-full'>
             <h1 className='text-3xl'><span className='text-[#C778DD]'>#</span>about-me</h1>
@@ -69,18 +72,33 @@ export default function Home() {
           </div>
         </div>
         <div className='w-full font-bold text-xl flex flex-row justify-between'>
-          <div className='mt-8'>
+          <div className='mt-8 w-6/12'>
             <h1>
-              Hello, i’m Elias!
+              Hello, I’m Alexis!
+
+              I’m a Full Stack Developer based in Chile, with a background in software engineering and over
+              4 years of experience building scalable, user-focused web applications. I specialize in creating
+              responsive interfaces with React and Next.js, and developing robust backends using Node.js and NestJS.
+              <br />
+              <br />
+              I’m passionate about delivering clean, maintainable code, following SOLID principles and agile
+              methodologies. I’ve helped companies in Latin America improve their digital presence through
+              secure APIs, intuitive UI/UX, and high-performance systems.
+              <br />
+              <br />
+              Always eager to grow, I’m constantly learning new technologies and refining my skills to deliver
+              the best possible experience — for users and development teams alike.
 
             </h1>
-            <button className='border-2 border-[#C778DD] px-4 py-2 hover:bg-[rgba(199,120,221,0.2)] transition-colors duration-300 ease-in-out'>Contact me!!</button>
+            <button className='border-2 border-[#C778DD] px-4 py-2 hover:bg-[rgba(199,120,221,0.2)] transition-colors duration-300 ease-in-out mt-6 '>Contact me!!</button>
           </div>
-          <div className='w-fit bg-dots bg-no-repeat bg-[position:0px_60px] bg-[size:180px_140px]'>
-            <img className='max-w-[287px]' src={me2} alt="Me" />
+          <div className=' bg-dots bg-no-repeat bg-[position:0px_60px]'>
+            <img className='' src={me2} alt="Me" />
           </div>
         </div>
       </div>
+
+      <Contact/>
     </div>
   )
 }

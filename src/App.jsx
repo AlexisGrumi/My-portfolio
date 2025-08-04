@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer"
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/home/Home"
 
@@ -9,6 +10,7 @@ function App() {
       <div className="text-[#ABB2BF] w-8/12 flex justify-items-center justify-self-center">
         <Home />
       </div>
+      <Footer />
     </div>
   )
 }
