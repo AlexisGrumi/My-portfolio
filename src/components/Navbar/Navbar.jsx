@@ -9,7 +9,7 @@ function Navbar() {
                 <div className='border-l-2 h-56 border-[#ABB2BF]' />
                 <div className='flex flex-col gap-y-4 items-center'>
                     <a
-                        href="https://github.com/tu-usuario"
+                        href="https://github.com/AlexisGrumi"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -20,7 +20,7 @@ function Navbar() {
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/in/tu-usuario"
+                        href="https://www.linkedin.com/in/alexis-grumi"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
@@ -30,7 +30,7 @@ function Navbar() {
                         />
                     </a>
 
-                    <a
+                    {/* <a
                         href="https://discord.gg/tu-invitacion"  // O tu perfil si usas url directa
                         target="_blank"
                         rel="noopener noreferrer"
@@ -39,7 +39,7 @@ function Navbar() {
                         <FaDiscord
                             className="w-[30px] min-w-[30px] max-w-[30px] h-auto text-current hover:text-white transition-colors duration-300 ease-in-out cursor-pointer"
                         />
-                    </a>
+                    </a> */}
 
 
                 </div>
