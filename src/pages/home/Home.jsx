@@ -58,7 +58,7 @@ export default function Home() {
             <div className="w-1/5 border-t border-primary my-4" />
           </div>
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-row w-full justify-between'>
           <div className="w-[400px] flex-shrink-0">
             <img src={image} alt="Decoration" className="h-auto" />
           </div>
