@@ -7,7 +7,7 @@ export default function Cards({ projects }) {
       {projects.map((project, index) => (
         <div
           key={index}
-          className="bg-transparent text-white border border-gray-700 w-[320px] font-mono"
+          className="bg-transparent text-white border border-gray-700 w-[320px] font-mono flex flex-col h-full"
         >
           {/* Imagen del proyecto */}
           <div className="border border-gray-500 overflow-hidden">
@@ -25,29 +25,37 @@ export default function Cards({ projects }) {
             ))}
           </div>
 
-          {/* Título y descripción */}
-          <div className="border-t border-gray-600 p-3">
+          {/* Título, descripción y botones */}
+          <div className="border-t border-gray-600 p-3 flex flex-col flex-grow">
             <h2 className="text-lg font-bold text-white">{project.title}</h2>
             <p className="text-gray-400 text-sm">{project.description}</p>
 
-            {/* Botones */}
-            <div className="mt-4 flex gap-3">
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex hover:bg-[rgba(199,120,221,0.2)] items-center gap-2 border border-purple-400 text-white px-4 py-1 text-sm rounded transition"
-              >
-                Live <RefreshCcw className="w-4 h-4" />
-              </a>
-              <a
-                href={project.cachedUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 border border-gray-500 text-white px-4 py-1 text-sm rounded hover:bg-gray-600 transition"
-              >
-                Cached <ArrowRight className="w-4 h-4" />
-              </a>
+            {/* Botones abajo */}
+            <div className="mt-auto flex justify-center">
+              {project.liveUrl ? (
+                <div className="flex flex-row gap-3">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex hover:bg-[rgba(199,120,221,0.2)] items-center gap-2 border border-purple-400 text-white px-4 py-1 text-sm rounded transition"
+                  >
+                    Live <RefreshCcw className="w-4 h-4" />
+                  </a>
+                  <a
+                    href={project.cachedUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 border border-gray-500 text-white px-4 py-1 text-sm rounded hover:bg-gray-600 transition"
+                  >
+                    Cached <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
+              ) : (
+                <div className="flex hover:bg-[rgba(199,120,221,0.2)] items-center gap-2 border border-purple-400 text-white px-4 py-1 text-sm rounded transition">
+                  'This Project is Private'
+                </div>
+              )}
             </div>
           </div>
         </div>

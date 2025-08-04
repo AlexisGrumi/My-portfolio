@@ -2,16 +2,18 @@ import React from 'react';
 import Cards from '../Cards/Cards';
 import AnnysPrinting from '../../assets/AnnysPrinting.png'
 import CAMGSolucionesLanding from '../../assets/CAMGSolucionesLanding.png'
+import CAMGSolucionesMiddleware from '../../assets/CAMGSolucionesMiddleware.png'
+import AcademiaCedolinLanding from '../../assets/AcademiaCedolinLanding.png'
 function Projects() {
   const projects = [
     {
-      imageSrc: "/project-thumb.png",
+      imageSrc: CAMGSolucionesMiddleware,
       imageAlt: "Middleware",
       technologies: ['NextJs', 'NodeJS', 'Tailwind', 'Firestore'],
       title: "Middleware CAMGSoluciones",
       description: "CAMGSoluciones es un middleware que centraliza la gestión de presupuestos, clientes y personal para optimizar servicios integrales en proyectos.",
-      liveUrl: "https://live.example.com",
-      cachedUrl: "https://cached.example.com"
+      liveUrl: "",
+      cachedUrl: ""
     },
     {
       imageSrc: CAMGSolucionesLanding,
@@ -19,8 +21,8 @@ function Projects() {
       technologies: ['NextJs', 'NodeJs', 'Tailwind'],
       title: "CAMGSoluciones Landing Page",
       description: "Landing page de CAMGSoluciones que presenta y promociona servicios integrales, destacando eficiencia, gestión centralizada y atención profesional.",
-      liveUrl: "https://live.example.com",
-      cachedUrl: "https://cached.example.com"
+      liveUrl: "https://camgsoluciones-landing.web.app",
+      cachedUrl: "https://camgsoluciones-landing.web.app"
     },
     {
       imageSrc: AnnysPrinting,
@@ -28,17 +30,17 @@ function Projects() {
       technologies: ['NextJs', 'NodeJs', 'Tailwind'],
       title: "Anny´s Printing Landing Page",
       description: "Anny’s Printing es una imprenta digital especializada en agendas, invitaciones y productos personalizados 100% digitales.",
-      liveUrl: "https://live.example.com",
-      cachedUrl: "https://cached.example.com"
+      liveUrl: "https://annys-printing.web.app",
+      cachedUrl: "https://annys-printing.web.app"
     },
     {
-      imageSrc: "",
+      imageSrc: AcademiaCedolinLanding,
       imageAlt: "Landing Academia Cedolin",
       technologies: ['NextJs', 'NodeJs', 'Tailwind'],
       title: "Academia Cedolin Landing Page",
       description: "Academia Cedolin es una academia especializada en clases particulares de italiano, adaptadas a todos los niveles y objetivos.",
-      liveUrl: "https://live.example.com",
-      cachedUrl: "https://cached.example.com"
+      liveUrl: "https://academia-cedolin.web.app/Home",
+      cachedUrl: "https://academia-cedolin.web.app/Home"
     },
   ];
 
